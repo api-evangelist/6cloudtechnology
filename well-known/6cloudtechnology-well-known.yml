@@ -1,0 +1,75 @@
+generated: '2026-09-05'
+method: probed
+source: live probe of every host this record knows
+note: >-
+  Every named /.well-known/ path plus the two non-well-known APIs.json locations was probed on
+  both hosts 6Cloud Technology serves (www.6cloudtech.com and the apex 6cloudtech.com, which are
+  the same origin). Every path returned 404 from nginx or from the ThinkPHP portal's own "System
+  Error" page. The negative control also returned 404, so this host does NOT echo paths and the
+  404s are real. NO WellKnown and NO SecurityTxt pointer is emitted — this file records a
+  measured absence, not a served surface. There are no other hosts to probe: 6cloudtech.com uses
+  wildcard DNS (a random nonexistent label resolves to the same 39.105.70.248) and none of
+  api./docs./open./developer./support./status. completes a TLS handshake, so no subdomain
+  discovery surface exists. The record carries no apis[] entry, so there is no baseURL host and
+  no OpenAPI servers[] host.
+hit_count: 0
+path_echo_control: passed
+wildcard_dns_control: failed
+wildcard_dns_note: >-
+  nonexistent-7f3ab91c.6cloudtech.com resolves to 39.105.70.248, the same A record as
+  www/api/docs/open/developer/support/status — DNS resolution is therefore not evidence that any
+  subdomain exists. None of those names answered on 443.
+hosts:
+- host: https://www.6cloudtech.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /.well-known/apis.json, status: 404}
+  - {path: /apis.json, status: 404}
+  - {path: /apis.yml, status: 404}
+  - {path: /.well-known/aauth-resource.json, status: 404}
+  - {path: /.well-known/ucp.json, status: 404}
+  - {path: /.well-known/acp.json, status: 404}
+  - {path: /.well-known/6cloudtechnology-negative-control-7f3ab91c.json, status: 404}
+- host: https://6cloudtech.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /.well-known/apis.json, status: 404}
+  - {path: /apis.json, status: 404}
+  - {path: /apis.yml, status: 404}
+  - {path: /.well-known/aauth-resource.json, status: 404}
+  - {path: /.well-known/ucp.json, status: 404}
+  - {path: /.well-known/acp.json, status: 404}
+  - {path: /.well-known/6cloudtechnology-negative-control-7f3ab91c.json, status: 404}
+contract_discovery:
+  note: >-
+    STEP 0b contract discovery run against every host the record knows. No OpenAPI, Swagger,
+    GraphQL, MCP, AsyncAPI, WSDL, gRPC or OGC surface was found. The 1,031-URL sitemap the site
+    publishes at /sitemap.xml contains no developer, API, reference, SDK or docs page of any kind
+    — it is 834 news articles, 60 weekly security bulletins, 57 news pages, 23 product pages, 16
+    solution pages and 13 about pages.
+  probes:
+  - {path: /openapi.json, status: 404}
+  - {path: /openapi.yaml, status: 404}
+  - {path: /swagger.json, status: 404}
+  - {path: /v1/openapi.json, status: 404}
+  - {path: /api-docs, status: 404}
+  - {path: /docs, status: 404}
+  - {path: /redoc, status: 404}
+  - {path: /graphql, status: 404}
+  - {path: /llms.txt, status: 404}
+  - {path: /robots.txt, status: 200, note: 'User-agent: * / Disallow: (empty) — nothing is disallowed to us'}
+  - {path: /sitemap.xml, status: 200, note: 1031 URLs, none developer-facing}

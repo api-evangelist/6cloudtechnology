@@ -64,5 +64,31 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-6Cloud Technology is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/6cloudtechnology
+6Cloud Technology (Chinese name 六方云; legal entity Beijing 6Cloud Information Technology Co., Ltd.
+/ 北京六方云信息技术有限公司) is a Beijing-based industrial and critical-infrastructure cybersecurity
+product vendor, founded in 2018. It ships appliances and platforms across five product lines —
+industrial control security (LinSec), network security (NSec), cloud security (CSec), AI security
+(AiSec) and situational-awareness security (CdSec) — plus a security-services practice, selling
+into rail transit, power, oil and gas, public services, water conservancy, intelligent
+manufacturing and smart mining.
+
+## Coverage
+
+**No API surface.** As of 2026-09-05 this company publishes no public API, developer portal, SDK
+or machine-readable specification. Contract discovery probed every named `/.well-known/` path,
+the conventional OpenAPI/Swagger locations, `/graphql`, `/llms.txt` and both A2A agent-card paths
+on `www.6cloudtech.com` and `6cloudtech.com`; every one returned 404, and a negative-control path
+also returned 404, so those are real misses rather than a catch-all. The company's own 1,031-URL
+sitemap contains no developer, API reference or SDK page. The closest thing to an integration
+contract it publishes is a set of syslog log-format specification PDFs for its LinSec and audit
+products, and each of those is released through a contact-capture form rather than a public URL.
+
+## Links
+
+- Website — https://www.6cloudtech.com/
+- Company profile — https://www.6cloudtech.com/portal/index/aboutus/pagename/page_company_info.html
+- Contact — https://www.6cloudtech.com/portal/index/aboutus/pagename/page_contact_us.html
+- News — https://www.6cloudtech.com/portal/index/news/pagename/page_news_dynamic.html
+- Security early-warning bulletins — https://www.6cloudtech.com/portal/index/weekly/pagename/page_safe_warnning.html
+- White papers — https://www.6cloudtech.com/portal/index/cooperat/pagename/page_white.html
+- Log-format specifications (contact-gated) — https://www.6cloudtech.com/portal/index/cooperat/pagename/page_logfile.html

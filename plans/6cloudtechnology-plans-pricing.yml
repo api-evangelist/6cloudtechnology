@@ -1,0 +1,21 @@
+generated: '2026-09-05'
+method: searched
+source: https://www.6cloudtech.com/
+plan_count: 0
+pricing_model: enterprise-sales
+note: >-
+  6Cloud Technology publishes no pricing, plans, tiers or quotas anywhere on its public site. The
+  full 1,031-URL sitemap was walked and contains no pricing page: products (industrial firewall,
+  IPS/IDS, industrial network audit, data diode, cloud firewall, situational-awareness platform,
+  training range) are appliances and platforms sold through a direct sales and channel-partner
+  motion. The only commercial call to action anywhere on the site is the 400-6060-270 sales line,
+  mkt@6cloudtech.com, and a contact-capture form. Even the product white papers and the syslog
+  log-format specification PDFs at /portal/index/cooperat/pagename/page_logfile.html are released
+  through a contact form (name + phone) rather than a public download. There is no self-serve
+  plan, no free tier, and no API to meter, so plan_count is an honest zero rather than an
+  unfetched gap.
+plans: []
+evidence:
+- {url: 'https://www.6cloudtech.com/', status: 200, note: no pricing link in primary or footer navigation}
+- {url: 'https://www.6cloudtech.com/sitemap.xml', status: 200, note: 1031 URLs, zero pricing pages}
+- {url: 'https://www.6cloudtech.com/portal/index/cooperat/pagename/page_logfile.html', status: 200, note: document downloads gated behind a contact-capture form}
