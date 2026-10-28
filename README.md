@@ -64,31 +64,87 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-6Cloud Technology (Chinese name 六方云; legal entity Beijing 6Cloud Information Technology Co., Ltd.
-/ 北京六方云信息技术有限公司) is a Beijing-based industrial and critical-infrastructure cybersecurity
-product vendor, founded in 2018. It ships appliances and platforms across five product lines —
-industrial control security (LinSec), network security (NSec), cloud security (CSec), AI security
-(AiSec) and situational-awareness security (CdSec) — plus a security-services practice, selling
-into rail transit, power, oil and gas, public services, water conservancy, intelligent
-manufacturing and smart mining.
+6Cloud Technology (Chinese name 六方云; legal entity Beijing 6Cloud Information Technology Co., Ltd. / 北京六方云信息技术有限公司) is a Beijing-based industrial and critical-infrastructure cybersecurity product vendor founded in 2018 and backed by China's Ministry of Science and Technology results-transformation fund. It builds and sells appliances and platforms across five product lines plus a security-services practice: industrial control security (LinSec — industrial firewall, industrial network audit and intrusion detection, industrial host guard, data diode/gateway, vulnerability scanner, asset and risk management), network security (NSec — next-generation firewall, IPS, IDS, operations management and audit, log audit and analysis, database audit), cloud security (CSec — distributed virtual firewall, distributed virtual IDS, cloud security resource scheduling), AI security (AiSec — network threat detection and retrospection), and situational-awareness security (CdSec — industrial situational awareness and security operations platform), alongside simulation and training range systems. It markets under an "AI gene, threat immunity" positioning and sells into rail transit, power, oil and gas and petrochemicals, public services, water conservancy, intelligent manufacturing, and smart mining. Products are delivered as vendor-sold appliances and platforms; the company publishes no public developer program, API reference, or machine-readable specification.
 
-## Coverage
+**Areas:** Company · Security · Cybersecurity · Industrial Control Systems · Operational Technology · Critical Infrastructure · Network Security · Cloud Security · Artificial Intelligence · Firewall · Intrusion Detection · China
 
-**No API surface.** As of 2026-09-05 this company publishes no public API, developer portal, SDK
-or machine-readable specification. Contract discovery probed every named `/.well-known/` path,
-the conventional OpenAPI/Swagger locations, `/graphql`, `/llms.txt` and both A2A agent-card paths
-on `www.6cloudtech.com` and `6cloudtech.com`; every one returned 404, and a negative-control path
-also returned 404, so those are real misses rather than a catch-all. The company's own 1,031-URL
-sitemap contains no developer, API reference or SDK page. The closest thing to an integration
-contract it publishes is a set of syslog log-format specification PDFs for its LinSec and audit
-products, and each of those is released through a contact-capture form rather than a public URL.
+## 6Cloud Technology on APIs.io
 
-## Links
+Everything profiled for 6Cloud Technology is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/6cloudtechnology/](https://apis.io/providers/6cloudtechnology/)** — or go straight to one of the APIs or properties below.
 
-- Website — https://www.6cloudtech.com/
-- Company profile — https://www.6cloudtech.com/portal/index/aboutus/pagename/page_company_info.html
-- Contact — https://www.6cloudtech.com/portal/index/aboutus/pagename/page_contact_us.html
-- News — https://www.6cloudtech.com/portal/index/news/pagename/page_news_dynamic.html
-- Security early-warning bulletins — https://www.6cloudtech.com/portal/index/weekly/pagename/page_safe_warnning.html
-- White papers — https://www.6cloudtech.com/portal/index/cooperat/pagename/page_white.html
-- Log-format specifications (contact-gated) — https://www.6cloudtech.com/portal/index/cooperat/pagename/page_logfile.html
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [6Cloudtechnology Domain Security](https://apis.io/security/6cloudtechnology/6cloudtechnology-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [6Cloudtechnology Plans Pricing](https://apis.io/plans/6cloudtechnology/6cloudtechnology-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.6cloudtech.com/)
+- [Support](https://www.6cloudtech.com/portal/index/aboutus/pagename/page_contact_us.html)
+- [Blog](https://www.6cloudtech.com/portal/index/news/pagename/page_news_dynamic.html)
+
+## API Evangelist rating
+
+**Kin Score 4.8** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/6cloudtechnology/](https://apis.io/providers/6cloudtechnology/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 6Cloud Technology: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/6cloudtechnology/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
